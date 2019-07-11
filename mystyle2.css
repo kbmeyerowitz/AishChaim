@@ -1,0 +1,688 @@
+body {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+  padding: 0;
+}
+
+/*.main-photo {
+  max-width: 100%;
+  width: 100%;
+}*/
+
+.wrapper-logo-carousel {
+  background-color: rgb(1, 14, 1);
+  /*background-color: rgb(26, 25, 25);*/
+}
+
+.mobile-logo {
+    text-align: center;
+}
+
+#logo-tagline {
+    margin-top: 15px;
+    max-width: 100%;
+    width: 45%;
+}
+
+#largescreen-main-image {
+  display: none;
+}
+
+#static-gallery-desktop {
+  display: none;
+}
+
+.parsha-flex {
+    display: none;
+    margin-top: 50px;
+    
+}
+
+#parsha {
+    text-align: center;
+    background-color: rgb(4, 4, 199);
+    color: white;
+    padding: 5px;
+}
+
+/*styling navbar*/
+
+.navbar {
+  background-color: #e0efc0 !important;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+.navbar-mobile {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+}
+
+#flame-mobile {
+  display: inline-block;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    padding: 0px;
+} 
+
+/*.navbar {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}commented out because it was preventing my .desktop-mobile: display: none from working*/ 
+
+#ongoing-programs {
+  color: black !important;
+}
+
+#upcoming-programs {
+  color: black !important;
+}
+
+#past-programs {
+  color: black !important;
+}
+
+/*styling main body*/
+#israel {
+    margin-top: 25px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.welcome-message-container {
+    text-align: center;
+    background-color: rgb(230, 228, 228);
+}
+
+.first-separator {
+  width: 50%;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+.welcome {
+  display: inline-block;
+  max-width: 100%;
+  width: 90%;
+  margin-top: 25px;
+  padding: 10px;
+  background: #99cc33 /* rgba(119, 5, 5, 0.7);
+  color: black /* white*/;
+  border-radius: 25px;
+}
+
+.welcome h5 {
+  line-height: 1.7rem;
+}
+
+
+.welcome-message {
+    display: inline-block;
+    max-width: 100%;
+    width: 90%;
+    margin-top: 25px;
+    padding: 10px;
+    /*background: #3399ff /* rgba(119, 5, 5, 0.7);*/
+    color: black /* white*/;
+}
+
+.welcome-message h5 {
+    line-height: 1.7rem;
+}
+
+h5 {
+    letter-spacing: -1px;
+}
+
+/*juber poster*/
+
+.main-events-image {
+  margin-top: 25px;
+}
+
+#mobile-main-image  {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+
+/*styling carousel*/
+/*controls image height*/.img-fluid {
+    height: 185px;
+}
+
+/*styling individual images-the first one was too elongated*/
+#shabbat-dinner {
+  height: 175px;
+  /*padding-bottom: 10px;*/
+}
+
+.carousel-item {
+  padding-bottom: 25px;
+}
+
+@media (min-width: 375px)  {
+  #israel {
+    height: 225px;
+    margin-top: 0px;  
+  }
+
+  #shabbat-dinner {
+    height: 210px;
+  }
+
+  #sukkot {
+    height: 225px;
+  }
+}
+
+@media (min-width: 411px)  {
+  .img-fluid {
+    height: 225px;
+}
+
+#shabbat-dinner {
+  height: 225px;
+  /*padding-bottom: 10px;*/
+}
+}
+
+@font-face {
+  font-family: piron;
+  src: url(fonts/piron.otf);
+}
+
+#learn {
+  font-family: piron;
+  border-radius: 25px;
+}  
+  
+
+#experience {
+  font-family: piron;
+  border-radius: 25px;
+}
+
+#grow {
+  font-family: piron;
+  border-radius: 25px;
+}
+
+.card-body {
+     
+}
+
+#myCarousel {
+    margin-top: 25px;
+}
+
+.text-center {
+    padding-top: 15px;
+}
+
+
+.mission-statement {
+    background-color: rgb(230, 228, 228);
+    max-width: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    margin-top: 55px;
+    text-align: center;
+}
+
+#mission-statement-id {
+max-width: 100%;
+width: 91%;
+text-shadow: 1.5px 1.5px grey; 
+box-shadow: 5px 10px #888888;
+background-color: #ff9933;
+padding-left: 4px;
+}
+
+.juber-statement {
+  text-align: center;
+  margin-top: 55px;
+}
+
+#juber-statement-id {
+  max-width: 100%;
+  width: 70%;
+  font-size: 1.5rem;
+  text-shadow: 1.5px 1.5px grey; 
+  box-shadow: 5px 10px #888888;
+  background-color: #ff9933;
+  padding-left: 4px;
+  margin: 0 auto;
+  }
+
+.paypal {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact-form-box-container {
+  background-color: rgb(240, 184, 82);
+  margin-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+#rabbi-contact {
+text-align: center;
+}
+
+#rabbi-name {
+text-shadow: 1.5px 1.5px rgb(189, 188, 188);  
+}
+
+.form-box {
+  margin-top: 25px;
+}
+
+#submit-button {
+  border-radius: 25px;
+} 
+
+@media (min-width: 320px) {
+
+#mission-statement-id {
+max-width: 100%;
+width: 100%;
+}
+}
+
+#torah-scroll {
+    display: inline-block;
+    max-width: 100%;
+    width: 15%;
+}
+
+.form-box {
+    text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: black;
+  color: white;
+}
+/*end styling main body*/
+
+
+@media (min-width: 1200px)  {
+
+/*styling static gallery*/
+#static-gallery-desktop {
+  display: inline-flex;
+  max-width: 100%;
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  
+}
+
+#experience-gallery-desktop-image {
+  text-align: center;
+}
+
+.card-title {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+#myCarousel {
+  display: none;
+}
+
+#mobile-main-image {
+  max-width: 100%;
+  width: 30%;
+}
+
+#flame-mobile {
+  display: none;
+}
+
+.navbar-desktop {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.nav-item li{
+  justify-content: space-between;
+}
+
+.nav-item a{
+  color: black !important;
+  font-size: 1.5rem;
+}
+
+.nav-container {
+    margin-top: 25px;
+}
+
+/*.nav-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  padding: 0px;
+} 
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+.navbar {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+}*/
+
+/* from deleted div in HTML .mobile-logo2 {
+  display: inline-block;
+  max-width: 100%;
+  width: 50%;
+  float: left;
+}*/
+
+.mobile-logo {
+  
+}
+#logo-tagline {
+  margin-top: 25px;
+  max-width: 100%;
+  width: 15%;
+  box-shadow: 5px 10px #888888;
+}
+
+.wrapper-parsha-and-special-links {
+  position: relative;
+  top: -50px;
+}
+
+.parsha-flex {
+  display: block;
+}
+
+.wrapper-special-links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#links {
+  display: inline-block;
+}
+
+#visit-aish {
+  /*box-shadow: 5px 10px #2e198a;*/
+  
+}
+/* Container holding the image and the text */
+
+.welcome-message-container {
+  margin: 0 auto;
+}
+
+
+#largescreen-main-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/*start styling forms*/
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* To give the same size to all text fields */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+  /*end styling forms*/
+}
+
+
+
+@media (min-width: 768px) {
+  
+body {
+
+}
+
+/*styling gallery for desktop*/
+.card {
+  background-color: black;
+}
+
+/*styling images*/
+#static-gallery-desktop {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+#learn-gallery-desktop-image {
+width: 90%;
+}
+
+#experience-gallery-desktop-image {
+width: 77%
+}
+
+#grow-gallery-desktop-image {
+width: 73.5%;
+}
+/*end styling images*/
+
+/*start styling card-title*/
+.card-body {
+
+}
+
+#learn-gallery-desktop {
+  text-align: center;
+  width: 25%;
+  border-radius: 25px;
+  padding: 5px;
+
+}
+
+#experience-gallery-desktop {
+  text-align: center;
+  width: 40%;
+  border-radius: 25px;
+  padding: 5px;
+
+}
+
+#grow-gallery-desktop {
+  text-align: center;
+  width: 25%;
+  border-radius: 25px;
+  padding: 5px;
+}
+/*end styling card-title*/
+
+.wrapper-logo-carousel {
+  display: none;
+}
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+.logo {
+    max-width: 100%;
+    width: 20%;
+    float: left;
+    margin-left: 25px;
+}
+
+.navbar {
+    max-width: 100%;
+    width: 100%;
+    float: right;
+    position: relative;
+    top: 25px;
+    
+}   
+    
+}
+
+
+
+
+
