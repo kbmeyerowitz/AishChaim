@@ -10,13 +10,21 @@ body {
   width: 100%;
 }*/
 
+.logo-container {
+  text-align: center;
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+@media (min-width: 1200px)  {
+.logo-container {
+  margin-top: 20px;
+}
+}
+
 .wrapper-logo-carousel {
   background-color: rgb(1, 14, 1);
   /*background-color: rgb(26, 25, 25);*/
-}
-
-.mobile-logo {
-    text-align: center;
 }
 
 #logo-tagline {
@@ -25,12 +33,18 @@ body {
     width: 45%;
 }
 
-#largescreen-main-image {
+.largescreen-main-image {
   display: none;
 }
 
 #static-gallery-desktop {
   display: none;
+}
+
+/*styling images*/
+.static-gallery-img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .parsha-flex {
@@ -364,7 +378,9 @@ footer {
 .navbar-desktop {
   display: flex;
   max-width: 100%;
-  width: 100%;
+  width: 75%;
+  margin-right: 0;
+  margin-left: 0;
   
 }
 
@@ -374,6 +390,7 @@ footer {
 
 .navbar-nav {
   display: flex;
+  
 }
 
 .nav-item li{
@@ -387,6 +404,7 @@ footer {
 
 .nav-container {
     margin-top: 25px;
+    text-align: center;
 }
 
 /*.nav-container {
@@ -427,10 +445,13 @@ footer {
 .wrapper-parsha-and-special-links {
   position: relative;
   top: -50px;
+  
 }
 
 .parsha-flex {
   display: block;
+  max-width: 100%;
+  width: 80%;
 }
 
 .wrapper-special-links {
@@ -453,10 +474,16 @@ footer {
 }
 
 
-#largescreen-main-image {
+.largescreen-main-image {
   display: block;
   max-width: 100%;
   width: 100%;
+  text-align: center;
+}
+
+#main-image {
+  max-width: 100%;
+  width: 70%;
 }
 
 .centered {
@@ -531,62 +558,21 @@ form {
 
 @media (min-width: 768px) {
   
-body {
+  .largescreen-main-image {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #main-image {
+    max-width: 100%;
+    width: 80%;
+  }
 
-}
 
-/*styling gallery for desktop*/
-.card {
-  background-color: black;
-}
 
-/*styling images*/
-#static-gallery-desktop {
-  display: inline-flex;
-  max-width: 100%;
-}
 
-#learn-gallery-desktop-image {
-width: 90%;
-}
-
-#experience-gallery-desktop-image {
-width: 77%
-}
-
-#grow-gallery-desktop-image {
-width: 73.5%;
-}
-/*end styling images*/
-
-/*start styling card-title*/
-.card-body {
-
-}
-
-#learn-gallery-desktop {
-  text-align: center;
-  width: 25%;
-  border-radius: 25px;
-  padding: 5px;
-
-}
-
-#experience-gallery-desktop {
-  text-align: center;
-  width: 40%;
-  border-radius: 25px;
-  padding: 5px;
-
-}
-
-#grow-gallery-desktop {
-  text-align: center;
-  width: 25%;
-  border-radius: 25px;
-  padding: 5px;
-}
-/*end styling card-title*/
 
 .wrapper-logo-carousel {
   display: none;
