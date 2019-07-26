@@ -79,10 +79,16 @@
 
 <header>
 
+    <div class="logo-section">
+        <img id="logo" src="images/logo-solid-round.png">
+    </div>
+
 <!--navbar for desktop-->
 <div class="container d-flex nav-container">
     <!--<img id="logo-tagline2" src="images/logo.png" alt="Aish Chaim logo">-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-desktop">
+          <a class="navbar-brand" href="index2.html"> <img src="images/flame-solid-transparent3.png" width="60" height="40" 
+            class="d-inline-block align-top" alt="navigation menu with Aish Chaim logo"><span style="color: white";>AISH CHAIM</span></a>
         <!--<a class="navbar-brand" id="logo-brand" href="index2.html"> <img src="images/branch-with-flame.png" width="140" height="100" 
           class="d-inline-block align-top" alt="navigation menu with Aish Chaim logo"></a>
         <!-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,176 +138,170 @@
   </div>
   
       <!--navbar for mobile--> 
-  <div class="container d-flex nav-container">
-     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light navbar-mobile">
-        <a class="navbar-brand" id="flame-mobile" href="index2.html"> <img src="images/branch-with-flame.png" 
-          width="60" height="40" class="d-inline-block align-top" alt="navigation menu with Aish Chaim logo"><b>AISH CHAIM</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          
-        </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index2.html">Home</a><!--took out Home <span class="sr-only">(current)</span></a>-->
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Programs
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" id="ongoing-programs" href="ongoing-programs.html">Ongoing Programs</a>
-                      <a class="dropdown-item" id="upcoming-programs" href="upcoming-programs.html">Upcoming Programs</a>
-                      <a class="dropdown-item" id="past-programs" href="past-programs.html">Past Programs</a>
-                    </div>
-                  </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="calendar.html">Calendar</a>
+      <div class="container d-flex justify-content-end nav-container"><!--nav-container holds navbar and parsha-flex-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light navbar-mobile">
+          <a class="navbar-brand" href="index2.html"> <img src="images/flame-solid-transparent3.png" width="60" height="40" 
+            class="d-inline-block align-top" alt="navigation menu with Aish Chaim logo"><span style="color: white";>AISH CHAIM</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
               </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#"><button>DONATE</button></a>
-            </li>
-            
-          </ul>
-      </div><!--apart of .collapse-->
-    </nav>
-  </div>
+              <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Programs
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" id="ongoing-programs" href="ongoing-programs.html">Ongoing Programs</a>
+                        <a class="dropdown-item" id="upcoming-programs" href="upcoming-programs.html">Upcoming Programs</a>
+                        <a class="dropdown-item" id="past-programs" href="past-programs.html">Past Programs</a>
+                      </div>
+                    </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#"><button>DONATE</button></a>
+              </li>
+              
+            </ul>
+          </div><!--apart of .collapse-->
+        </nav>           
+               
+      </div> <!--closing div container for flex-box and .nav-container-->
 
 </header>
 
 
-<main>
-  <!--<div class="logo-container">
-      <img id="logo" src="images/logo-minus-tagline.png" width="280" height="240">
-  </div>-->
-
-<div class="largescreen-main-image">
-  <img id="main-image" src="images/header-image2.png">  
-</div>
-  
-<div class="wrapper-parsha-and-special-links">
-  <div class="wrapper-parsha">
-    <div class="parsha-flex">
+<div class="container-parsha-and-gallery">
+  <div class="wrapper-parsha-and-special-links">
+    <div class="wrapper-parsha">
       <div id="parsha">
-        <h4><span style="display:inline-block";>June 28, 2019</span>
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <span style="display:inline-block";><h5>Parshat of the Week: Shlach L'chah</h5></span>
-        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <span style="display:inline-block";>Candlelighting: 8:15pm</span> 
-        &nbsp&nbsp&nbsp&nbsp
-        <span style="display:inline-block";>Shabbat Ends: 9:23pm</span>
-        &nbsp&nbsp&nbsp
+            <h5><span style="display:inline-block";>July 28, 2019</span>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span style="display:inline-block";><h5>Parshat of the Week: Pinchas</h5></span>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span style="display:inline-block";>Candlelighting: 8:02pm</span> 
+            &nbsp&nbsp&nbsp&nbsp
+            <span style="display:inline-block";>Shabbat Ends: 9:06pm</span>
+            &nbsp&nbsp&nbsp</h5>
       </div> <!--closing div to #parsha-->
-    </div> <!--closing div to .parsha-flex-->
-  </div> <!--closing div to .wrapper-parsha-->
-
-  
-</div> <!--closing div to .wrapper-and-special-links-->
-
-<!--
-<div class="row">
-    
-  <div class= "col-sm-4">
-      <div class=><img class="static-gallery-img" src="images/sukkot.jpg" alt="shabbat dinner"></div>
-  </div> <!-closing div to .col-sm-4--
-
-  <div class= "col-sm-4">
-      <div class=><img class="static-gallery-img" src="images/shabbat-dinner-border.png" alt="shabbat dinner"></div>
-  </div> <!-closing div to .col-sm-4--
-
-  <div class= "col-sm-4">
-      <div class><img class="static-gallery-img" src="images/israel-trip.jpg" alt="shabbat dinner"></div>
-  </div> <!-closing div to .col-sm-4--	
+    </div> <!--closing div to .wrapper-parsha-->
+  </div> <!--closing div to .wrapper-and-special-links-->
 </div>
-     
 
-    
-  <!--<div class="mobile-logo"><img id="logo-tagline" src="images/logo-minus-tagline.png" alt="Aish Chaim logo"></div>
- <!-<div class="mobile-logo"><img id="logo-tagline" src="images/logo-minus-tagline.png" alt="Aish Chaim logo"></div>-->
- 
- <div class="wrapper-logo-carousel">
-    <div class="container-fluid">
-    <!--<h1 class="text-center mb-3"><span style="text-shadow: 2px 2px gray;">ONGOING PROGRAMS</span></h1>-->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner row w-100 mx-auto">
-          <div class="carousel-item col-md-4 active">
-              <h1 class="card-title text-center mb-3"><span id="learn" style="text-shadow: 1.5px 1.5px white;background-color: #f09e4c"><strong>&#9686LEARN&#9687</strong></span></h1>
-                <div class="card">
-                  <img class="card-img-top img-fluid" id="shabbat-dinner" src="images/shabbat-dinner-cropped.png" alt="Card image cap">
-                </div>
-          </div>
-        
-          <div class="carousel-item col-md-4">
-              <h1 class="card-title text-center mb-3"><span id="experience" style="text-shadow: 1.5px 1.5px white;background-color: #f09e4c"><strong>&#9686EXPERIENCE&#9687</strong></span></h1>
-                <div class="card">
-                  <img class="card-img-top img-fluid" id="sukkot" src="images/sukkot.jpg" alt="Card image cap">
-                </div>
-          </div>
-        
-          <div class="carousel-item col-md-4">
-              <h1 class="card-title text-center mb-3"><span id="grow" style="text-shadow: 1.5px 1.5px white;background-color: #f09e4c"><strong>&#9686GROW&#9687</strong></span></h1>
-                <div class="card">
-                  <img class="card-img-top img-fluid" id="israel" src="images/israel-trip.jpg" alt="Card image cap">
-                </div>
-          </div>
-        </div><!--closing div to carousel-inner-->
+
+<div class="header-image">
+  <!--<img id="img-shabbat-dinner-gallery" src="images/shabbat-dinner-cropped.png" alt=""-->
+  <img id="img-header-parsha-gems" src="images/parsha-gems-symbol2.png" alt="">
+</div>
+
+<!--3-images-->
+<div class="row main-image-desktop">
+  <div class="col-sm-3">
+    <img id="img-shabbat-dinner-desktop" src="images/shabbat-dinner-cropped.png" alt="">
+  </div>
+
+  <div class="col-sm-3">
+    <img id="img-israel-desktop" src="images/israel-trip-experiment2.png" alt="">
+  </div>
+
+  <div class="col-sm-3">
+    <img id="img-sukkot-desktop" src="images/sukkot-experiment2.png" alt="">
+  </div>
+</div>  
+
+<main>
+
+  <div class="wrapper"> <!--this div contains remaining content of page sans navbar, header and beginning three images-->
+
+    <div class="wrapper-logo-carousel">
+        <div class="container-fluid">
+        <!--<h1 class="text-center mb-3"><span style="text-shadow: 2px 2px gray;">ONGOING PROGRAMS</span></h1>-->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner row w-100 mx-auto">
+              <div class="carousel-item col-md-4 active">
+                  <h1 class="card-title text-center mb-3"><span id="learn" style="text-shadow: 1.5px 1.5px white;background-color: #f09e4c"><strong>&#9686LEARN&#9687</strong></span></h1>
+                    <div class="card">
+                      <img class="card-img-top img-fluid" id="shabbat-dinner" src="images/shabbat-dinner-cropped.png" alt="Card image cap">
+                    </div>
+              </div>
+            
+              <div class="carousel-item col-md-4">
+                  <h1 class="card-title text-center mb-3"><span id="experience" style="text-shadow: 1.5px 1.5px white;background-color: #f09e4c"><strong>&#9686EXPERIENCE&#9687</strong></span></h1>
+                    <div class="card">
+                      <img class="card-img-top img-fluid" id="sukkot" src="images/sukkot.jpg" alt="Card image cap">
+                    </div>
+              </div>
+            
+              <div class="carousel-item col-md-4">
+                  <h1 class="card-title text-center mb-3"><span id="grow" style="text-shadow: 1.5px 1.5px white;background-color: #f09e4c"><strong>&#9686GROW&#9687</strong></span></h1>
+                    <div class="card">
+                      <img class="card-img-top img-fluid" id="israel" src="images/israel-trip.jpg" alt="Card image cap">
+                    </div>
+              </div>
+            </div><!--closing div to carousel-inner-->
+          
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div><!--closing div to myCarousel-->
+    </div><!--closing div to container-fluid-->
+    </div> <!--closing for .wrapper-logo-carousel-->
+
+  <hr class="first-separator">
+
+    <div class="row main-changeable-content">
+      <div class="col-sm-8">
+        <div class="welcome-message-container" id="welcome-message-container-id">
+            <!---<img id="israel" src="images/israel-trip-with-slogan.jpg">-->
+            <div class="welcome"><h5><span style="text-shadow: 1px 1px rgb(240, 239, 239);">Aish Chaim welcomes you for Shabbat and 
+              Holiday services!</span></h5>
+            </div>
+              <div class="welcome-message">    
+                <h6>Please join our uplifting tefilah (prayer) and be part of our community.</h6>
+                <p><h6>Learners classes also run parallel to the main service on Shabbat morning.</h6>
+                <p> Click <a href="davening.html">here</a> for this week's Shabbat schedule.</p>
+              </div>
+        </div> <!--ending div .welcome-message-container-->
+      </div> <!--closing div .col-md-8-->
+
+      <div class="col-sm-4">
+        <div class="main-events-image juber-statement">
+            <p id="juber-statement-id"><i style="font-size: 2rem;">NEW</i> for 2019</p>
+            <img id="img-mobile-main" src="images/juber-final.jpg">
+        </div> <!--closing div to .main-events-image-->
+      </div> <!--closing div to .col-md-4-->
+    </div> <!--ending div .row main-changeable-content-->
+
       
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-    </div><!--closing div to myCarousel-->
-</div><!--closing div to container-fluid-->
-</div> <!--closing for .wrapper-navbar-logo-carousel-->
-
-
-
-
-
-<hr class="first-separator">
-
-
-<div class="welcome-message-container">
-    <!---<img id="israel" src="images/israel-trip-with-slogan.jpg">-->
-    <div class="welcome"><h5><span style="text-shadow: 1px 1px rgb(240, 239, 239);">Aish Chaim welcomes you for Shabbat and 
-      Holiday services!</span></h5>
-    </div>
-      <div class="welcome-message">    
-        <h6>Please join our uplifting tefilah (prayer) and be part of our community.</h6>
-        <p><h6>Learners classes also run parallel to the main service on Shabbat morning.</h6>
-        <p> Click <a href="davening.html">here</a> for this week's Shabbat schedule.</p>
+      <div class="mission-statement">
+      <p><h2 id="mission-statement-id">OUR MISSION <img id="torah-scroll" src="images/torah-scroll-simple2.png"></h2></p>
+          <p><strong>Etz Chaim</strong> and <strong>Aish Philadelphia</strong> have entered into a new collaboration! Both organizations have a rich, decades-long history of engaging the greater community in Jewish education and engagement. 
+      Beginning on January 1, 2019, these two entities began to work together as one unified entity — Aish Chaim.</p>
+      <p>Combining the best of both organizations, Aish Chaim is <i>the</i> platform for every Jewish person in Greater Philadelphia 
+      to find their place among ‘The Tribe’. With a rich blend of learning and engagement programs, as well as our spirit-filled Shabbat services with optional learning groups, Aish Chaim is truly welcoming for all those who choose to join in.</p>
+      <strong>We hope to see you soon at one of our Shabbat service and learning programs!</strong>
+      </p>
       </div>
-</div>
 
-<div class="main-events-image juber-statement">
-    <p id="juber-statement-id"><i style="font-size: 2rem;">NEW</i> for 2019</p>
-    <img id="mobile-main-image" src="images/juber.png">
-</div>
 
- 
-<div class="mission-statement">
-<p><h2 id="mission-statement-id">OUR MISSION <img id="torah-scroll" src="images/torah-scroll-simple.png"></h2></p>
-    <p><strong>Etz Chaim</strong> and <strong>Aish Philadelphia</strong> have entered into a new collaboration! Both organizations have a rich, decades-long history of engaging the greater community in Jewish education and engagement. 
-Beginning on January 1, 2019, these two entities began to work together as one unified entity — Aish Chaim.</p>
-<p>Combining the best of both organizations, Aish Chaim is <i>the</i> platform for every Jewish person in Greater Philadelphia 
-to find their place among ‘The Tribe’. With a rich blend of learning and engagement programs, as well as our spirit-filled Shabbat services with optional learning groups, Aish Chaim is truly welcoming for all those who choose to join in.</p>
-<strong>We hope to see you soon at one of our Shabbat service and learning programs!</strong>
-</p>
-</div>
+  </div> <!--closing div to .wrapper-->
 
 
 <!--
