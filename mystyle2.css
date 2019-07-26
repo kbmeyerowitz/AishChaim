@@ -5,65 +5,12 @@ body {
   padding: 0;
 }
 
-/*.main-photo {
-  max-width: 100%;
-  width: 100%;
-}*/
-
-.logo-container {
-  text-align: center;
-  max-width: 100%;
-  margin-top: 100px;
-}
-
-@media (min-width: 1200px)  {
-.logo-container {
-  margin-top: 20px;
-}
-}
-
-.wrapper-logo-carousel {
-  background-color: rgb(1, 14, 1);
-  /*background-color: rgb(26, 25, 25);*/
-}
-
-#logo-tagline {
-    margin-top: 15px;
-    max-width: 100%;
-    width: 45%;
-}
-
-.largescreen-main-image {
-  display: none;
-}
-
-#static-gallery-desktop {
-  display: none;
-}
-
-/*styling images*/
-.static-gallery-img {
-  max-width: 100%;
-  width: 100%;
-}
-
-.parsha-flex {
-    display: none;
-    margin-top: 50px;
-    
-}
-
-#parsha {
-    text-align: center;
-    background-color: rgb(4, 4, 199);
-    color: white;
-    padding: 5px;
-}
-
-/*styling navbar*/
-
-.navbar {
-  background-color: #e0efc0 !important;
+button {
+  border-radius: 25px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .navbar-desktop {
@@ -71,13 +18,7 @@ body {
 }
 
 .navbar-mobile {
-  display: flex;
-  max-width: 100%;
-  width: 100%;
-}
-
-#flame-mobile {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .nav-container {
@@ -88,11 +29,21 @@ body {
     padding: 0px;
 } 
 
-/*.navbar {
-    display: flex;
-    max-width: 100%;
-    width: 100%;
-}commented out because it was preventing my .desktop-mobile: display: none from working*/ 
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.bg-light {
+    background-color: black !important;
+}
+
+.fa-bars  {
+    color: white !important;
+}
+
+.nav-item a{
+    color: white !important;
+}
 
 #ongoing-programs {
   color: black !important;
@@ -106,85 +57,57 @@ body {
   color: black !important;
 }
 
-/*styling main body*/
-#israel {
-    margin-top: 25px;
-    max-width: 100%;
-    width: 100%;
+#img-header-parsha-gems {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
-.welcome-message-container {
-    text-align: center;
-    background-color: rgb(230, 228, 228);
+.container-parsha-and-gallery {
+  display:none;
 }
 
-.first-separator {
-  width: 50%;
-  border: 1px solid black;
+#parsha {
+  display: none;
+}
+
+.wrapper {
+  background-color: ivory;
   margin-top: 50px;
 }
 
-.welcome {
-  display: inline-block;
-  max-width: 100%;
-  width: 90%;
-  margin-top: 25px;
-  padding: 10px;
-  background: #99cc33 /* rgba(119, 5, 5, 0.7);
-  color: black /* white*/;
-  border-radius: 25px;
-}
-
-.welcome h5 {
-  line-height: 1.7rem;
-}
-
-
-.welcome-message {
-    display: inline-block;
-    max-width: 100%;
-    width: 90%;
-    margin-top: 25px;
-    padding: 10px;
-    /*background: #3399ff /* rgba(119, 5, 5, 0.7);*/
-    color: black /* white*/;
-}
-
-.welcome-message h5 {
-    line-height: 1.7rem;
-}
-
-h5 {
-    letter-spacing: -1px;
-}
-
-/*juber poster*/
-
-.main-events-image {
-  margin-top: 25px;
-}
-
-#mobile-main-image  {
-  margin-top: 20px;
+#logo {
   max-width: 100%;
   width: 100%;
+  margin-top: 35px;
 }
 
-/*styling carousel*/
-/*controls image height*/.img-fluid {
-    height: 185px;
+.main-image-desktop{
+  display: none;
 }
 
-/*styling individual images-the first one was too elongated*/
-#shabbat-dinner {
-  height: 175px;
-  /*padding-bottom: 10px;*/
+#img-shabbat-dinner-desktop {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 3px 3px rgb(92, 91, 91);
+}
+    
+#img-sukkot-desktop {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 3px 3px rgb(92, 91, 91);
+}
+  
+#img-israel-desktop {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 3px 3px rgb(92, 91, 91);
 }
 
-.carousel-item {
-  padding-bottom: 25px;
-}
-
+/*styling images in image carousel*/
 @media (min-width: 375px)  {
   #israel {
     height: 225px;
@@ -221,7 +144,6 @@ h5 {
   border-radius: 25px;
 }  
   
-
 #experience {
   font-family: piron;
   border-radius: 25px;
@@ -232,10 +154,6 @@ h5 {
   border-radius: 25px;
 }
 
-.card-body {
-     
-}
-
 #myCarousel {
     margin-top: 25px;
 }
@@ -244,7 +162,46 @@ h5 {
     padding-top: 15px;
 }
 
+.welcome-message-container {
+  max-width: 100%;
+  width: 100%;  
+  text-align: center;
+  background-color: rgb(224, 252, 208);
+  background-color: white;
+  margin-top: 50px;  
+}
 
+.welcome {
+  display: inline-block;
+  max-width: 100%;
+  width: 90%;
+  margin-top: 25px;
+  padding: 10px;
+  background: #99cc33 /* rgba(119, 5, 5, 0.7);
+  color: black /* white*/;
+  border-radius: 25px;
+}
+
+.welcome h5 {
+  line-height: 1.7rem;
+}
+
+
+.welcome-message {
+    display: inline-block;
+    max-width: 100%;
+    width: 90%;
+    margin-top: 25px;
+    padding: 10px;
+    /*background: #3399ff /* rgba(119, 5, 5, 0.7);*/
+    color: black /* white*/;
+}
+
+.welcome-message h5 {
+    line-height: 1.7rem;
+}
+
+/*styling Our Mission*/
 .mission-statement {
     background-color: rgb(230, 228, 228);
     max-width: 100%;
@@ -266,6 +223,18 @@ background-color: #ff9933;
 padding-left: 4px;
 }
 
+#mission-statement-id {
+  max-width: 100%;
+  width: 100%;
+}
+  
+
+#img-mobile-main {
+  max-width: 100%;
+  width: 100%;
+}
+
+/*styling Juber program*/
 .juber-statement {
   text-align: center;
   margin-top: 55px;
@@ -282,11 +251,13 @@ padding-left: 4px;
   margin: 0 auto;
   }
 
+/*styling paypal button*/
 .paypal {
   margin-top: 50px;
   text-align: center;
 }
 
+/*styling contact form*/
 .contact-form-box-container {
   background-color: rgb(240, 184, 82);
   margin-top: 25px;
@@ -310,14 +281,6 @@ text-shadow: 1.5px 1.5px rgb(189, 188, 188);
   border-radius: 25px;
 } 
 
-@media (min-width: 320px) {
-
-#mission-statement-id {
-max-width: 100%;
-width: 100%;
-}
-}
-
 #torah-scroll {
     display: inline-block;
     max-width: 100%;
@@ -336,8 +299,262 @@ footer {
 }
 /*end styling main body*/
 
-
 @media (min-width: 1200px)  {
+
+  .logo-section {
+    background-color: rgb(68, 68, 68);
+    margin-top: 0px !important;
+  }
+
+  #logo {
+    max-width: 100%;
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*styling navbar*/
+  
+  .navbar {
+    background-color: #e0efc0 !important;
+  }
+   
+  #flame-mobile {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: none !important; /*why do I need important here? Isn't that bad code?*/
+  }
+  
+  .navbar-desktop {
+    display: inline-flex !important; /*why do I need important here? Isn't that bad code?*/
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+   
+  /*what Jenny helped me with*/
+  .navbar-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+ 
+  .nav-item li{
+    justify-content: space-between;
+  }
+  
+  .bg-light {
+    background-color: black !important;
+  }
+  
+  .fa-bars  {
+    color: white !important;
+  }
+  
+  .navbar-toggler-icon {
+    color: white !important;
+  }
+  
+  .nav-item a{
+    color: white !important;
+  }
+  
+  .nav-container {
+      /*margin-top: 25px;*/
+      text-align: center;
+  }
+    
+  #flame-mobile {
+    display: inline-block;
+  }
+  
+  .nav-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+      padding: 0px;
+  }
+  
+  .nav-item {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .header-image {
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    /*position: relative;*/
+    /*top: -50px;*/
+  }
+
+  #img-header-parsha-gems {
+    width: 70%;
+    height: 100%;
+  }
+
+  .wrapper-logo-carousel {
+    background-color: rgb(1, 14, 1);
+    /*background-color: rgb(26, 25, 25);*/
+  }
+           
+  #parsha {
+      text-align: center;
+      background-color: rgb(4, 4, 199);
+      color: white;
+      padding-top: 25px;
+      padding-bottom: 20px;
+      margin-top: 50px !important;
+  }
+
+  #parsha h5 {
+    letter-spacing: 1.6px !important;
+    font-size: 1.2rem !important;
+  }
+       
+  #ongoing-programs {
+    color: black !important;
+  }
+  
+  #upcoming-programs {
+    color: black !important;
+  }
+  
+  #past-programs {
+    color: black !important;
+  }
+  
+  /*styling main body*/
+  
+  .main-image-desktop {
+    display: inline-flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: rgb(17, 17, 90);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0px !important;
+  }
+
+  .col-sm-3 {
+    display: block;
+    margin: 0 auto;
+  }
+/*contains gallery and blue parsha box*/
+  .container-parsha-and-gallery {
+    display: inline-block;
+    /*position: relative;*/
+    /*top: -50px;*/
+}
+
+  .row {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #img-shabbat-dinner-desktop {
+    width: 100%;
+    max-width: 100%;
+  }
+      
+  #img-sukkot-desktop {
+    width: 100%;
+    max-width: 100%;
+  }
+    
+  #img-israel-desktop {
+    width: 100%;
+    max-width: 100%;
+  }
+    
+  #israel {
+      margin-top: 25px;
+      max-width: 100%;
+      width: 100%;
+  }
+  
+
+  .first-separator {
+    display: none;
+  }
+
+  .main-changeable-content {
+    margin-top: 50px;
+  }
+
+
+  .welcome-message-container {
+    width: 50%;  
+    background-color: rgb(230, 228, 228);
+    display: block;
+    margin: 0 auto;
+  }
+
+  #welcome-message-container-id {
+    margin-top: 50px;
+  }
+  
+  .first-separator {
+    width: 50%;
+    border: 1px solid black;
+    margin-top: 50px;
+  }
+  
+  .welcome {
+    display: inline-block;
+    max-width: 100%;
+    width: 90%;
+    margin-top: 25px;
+    padding: 10px;
+    background: #99cc33 /* rgba(119, 5, 5, 0.7);
+    color: black /* white*/;
+    border-radius: 25px;
+  }
+  
+  .welcome h5 {
+    line-height: 1.7rem;
+  }
+  
+  
+  .welcome-message {
+      display: inline-block;
+      max-width: 100%;
+      width: 90%;
+      margin-top: 25px;
+      padding: 10px;
+      /*background: #3399ff /* rgba(119, 5, 5, 0.7);*/
+      color: black /* white*/;
+  }
+  
+  .welcome-message h5 {
+      line-height: 1.7rem;
+  }
+  
+  h5 {
+      letter-spacing: -1px;
+  }
+  
+ 
+  /*styling carousel*/
+  /*controls image height*/
+  .img-fluid {
+      height: 185px;
+  }
+  
+  /*styling individual images-the first one was too elongated*/
+  #shabbat-dinner {
+    height: 175px;
+    /*padding-bottom: 10px;*/
+  }
+  
+  .carousel-item {
+    padding-bottom: 25px;
+  }
 
 /*styling static gallery*/
 #static-gallery-desktop {
@@ -359,93 +576,19 @@ footer {
   width: 100%;
 }
 
-
-
-
 #myCarousel {
   display: none;
 }
 
 #mobile-main-image {
   max-width: 100%;
-  width: 30%;
-}
-
-#flame-mobile {
-  display: none;
-}
-
-.navbar-desktop {
-  display: flex;
-  max-width: 100%;
-  width: 75%;
-  margin-right: 0;
-  margin-left: 0;
-  
-}
-
-.navbar-mobile {
-  display: none;
-}
-
-.navbar-nav {
-  display: flex;
-  
-}
-
-.nav-item li{
-  justify-content: space-between;
-}
-
-.nav-item a{
-  color: black !important;
-  font-size: 1.5rem;
-}
-
-.nav-container {
-    margin-top: 25px;
-    text-align: center;
-}
-
-/*.nav-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
   width: 100%;
-  padding: 0px;
-} 
-
-.navbar-toggler-icon {
-  color: white !important;
-}
-
-.navbar {
-  display: flex;
-  max-width: 100%;
-  width: 100%;
-}*/
-
-/* from deleted div in HTML .mobile-logo2 {
-  display: inline-block;
-  max-width: 100%;
-  width: 50%;
-  float: left;
-}*/
-
-.mobile-logo {
-  
-}
-#logo-tagline {
-  margin-top: 25px;
-  max-width: 100%;
-  width: 15%;
-  box-shadow: 5px 10px #888888;
 }
 
 .wrapper-parsha-and-special-links {
   position: relative;
-  top: -50px;
-  
+  top: 0px;
+  text-align: center;
 }
 
 .parsha-flex {
@@ -456,7 +599,8 @@ footer {
 
 .wrapper-special-links {
   margin-top: 25px;
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 #links {
@@ -465,33 +609,7 @@ footer {
 
 #visit-aish {
   /*box-shadow: 5px 10px #2e198a;*/
-  
 }
-/* Container holding the image and the text */
-
-.welcome-message-container {
-  margin: 0 auto;
-}
-
-
-.largescreen-main-image {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-#main-image {
-  max-width: 100%;
-  width: 70%;
-}
-
-.centered {
-    position: absolute;
-    top: -300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
 /*start styling forms*/
 form {
@@ -555,21 +673,80 @@ form {
 }
 
 
+@media (min-width: 768px) and (max-width:1023px) {
+
+.navbar-desktop {
+  display: none;
+} 
+}
+
+@media (min-width: 1024px) {
+  .navbar-desktop {
+    display: block;
+} 
+
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+}
 
 @media (min-width: 768px) {
-  
-  .largescreen-main-image {
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-  }
-  
-  #main-image {
-    max-width: 100%;
-    width: 80%;
-  }
 
+.navbar-desktop {
+  display: none;
+}
+
+.navbar-mobile {
+  display: inline-flex;
+  justify-content: space-around;
+}
+ 
+.logo-section {
+  background-color: rgb(68, 68, 68);
+  margin-top: 50px;
+  padding-top: 35px; 
+  padding-bottom: 25px;
+}
+
+#logo {
+  max-width: 100%;
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*contains gallery and blue parsha box*/
+.container-parsha-and-gallery {
+  display: block;
+}
+
+#parsha {
+  text-align: center;
+  background-color: rgb(4, 4, 199);
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+#parsha h5 {
+letter-spacing: 1px;
+font-size: .8rem;
+}
+
+.main-image-desktop {
+  max-width: 100%;
+  width: 100%;
+  background-color: rgb(17, 17, 90);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0px !important;
+  display: inline-flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
 
 
 
@@ -648,25 +825,11 @@ form {
 
 
 
-@media (min-width: 768px) and (max-width: 1199px) {
 
-.logo {
-    max-width: 100%;
-    width: 20%;
-    float: left;
-    margin-left: 25px;
-}
 
-.navbar {
-    max-width: 100%;
-    width: 100%;
-    float: right;
-    position: relative;
-    top: 25px;
+  
     
-}   
-    
-}
+
 
 
 
