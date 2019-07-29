@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aish Chaim</title>
+
+    <meta name="author" content="Elisheva Meyerowitz" />
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Bootstrap 4 Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="mystyle2.css">
+
+
+    <!-- Font Awesome Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"/>
+
+    <!-- Google Fonts -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      rel="stylesheet"
+      type="text/css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Calligraffitti|Charm|Courgette|Dancing+Script|Petit+Formal+Script|Satisfy"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Parisienne"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ledger"
+      rel="stylesheet"/>
+        
+    <script>
+      $(document).ready(function() {
+        $("#myCarousel").on("slide.bs.carousel", function(e) {
+          var $e = $(e.relatedTarget);
+          var idx = $e.index();
+          var itemsPerSlide = 3;
+          var totalItems = $(".carousel-item").length;
+      
+          if (idx >= totalItems - (itemsPerSlide - 1)) {
+            var it = itemsPerSlide - (totalItems - idx);
+            for (var i = 0; i < it; i++) {
+              // append slides to end
+              if (e.direction == "left") {
+                $(".carousel-item")
+                  .eq(i)
+                  .appendTo(".carousel-inner");
+              } else {
+                $(".carousel-item")
+                  .eq(0)
+                  .appendTo($(this).find(".carousel-inner"));
+              }
+            }
+          }
+        });
+      });
+
+      
+    </script>
+
+<!---<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+<script>paypal.Buttons().render('body');</script>-->
+  </head>
+  <body>
+
+<header>
+
+    <div class="row logo-section">
+
+        <div class="col-sm-4"> 
+            <div id="#someId" class="welcome-header"><h1><span style="color: white;">Welcome!</span></h1></div> 
+            <!--<a class="header-link" href="#"><button class="button-header" id="donate-button">DONATE</button></a>-->
+        
+            <!---<ul class="fly-in-text hidden">
+              <li>W</li>
+              <li>e</li>
+              <li>l</li>
+              <li>c</li>
+              <li>o</li>
+              <li>m</li>
+              <li>e</li>
+              <li>!</li>
+            </ul>-->
+        
+        
+          </div>
+        
+      <div class="col-sm-4">
+        <img id="logo" src="images/logo-solid-round.png">
+      </div>
+            
+      <!--<a class="header-link" href="#"><button class="button-header" id="subscribe-button">Subscribe</button></a>--->
+      <div class="col-sm-4 container-img">
+          <img id="dummy-photo" class="image" src="images/dummy-photo-israel-trip.jpg" alt="Israel trip">
+          <div class="middle">
+            <div class="text">Israel Trip 2019</div>
+          </div>
+        </div>
+    </div>
+    
+    <!--navbar for desktop-->
+<div class="container d-flex nav-container">
+    <!--<img id="logo-tagline2" src="images/logo.png" alt="Aish Chaim logo">-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-desktop">
+          <a class="navbar-brand" href="index2.html"> <img src="images/flame-solid-transparent3.png" width="60" height="40" 
+            class="d-inline-block align-top" alt="navigation menu with Aish Chaim logo"><span style="color: white";>AISH CHAIM</span></a>
+        <!--<a class="navbar-brand" id="logo-brand" href="index2.html"> <img src="images/branch-with-flame.png" width="140" height="100" 
+          class="d-inline-block align-top" alt="navigation menu with Aish Chaim logo"></a>
+        <!-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <!-<span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>-->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item active">
+              <a class="nav-link" href="index2.html">Home</a><!--took out Home <span class="sr-only">(current)</span></a>-->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Programs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" id="ongoing-programs" href="ongoing-programs.html">Ongoing Programs</a>
+                      <a class="dropdown-item" id="upcoming-programs" href="#">Upcoming Programs</a>
+                      <a class="dropdown-item" id="past-programs" href="past-programs.html">Past Progams</a>
+                    </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Calendar</a>
+            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><button>Subscribe</button></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="https://www.aish.com/"><button>aish.com</button> </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#"><button>DONATE</button></a>
+            </li>
+            
+          </ul>
+        </div><!--apart of .collapse-->
+      </nav>
+  </div>
+  
+      <!--navbar for mobile--> 
+      <div class="container d-flex justify-content-end nav-container"><!--nav-container holds navbar and parsha-flex-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light navbar-mobile">
+          <a class="navbar-brand" href="index2.html"> <img src="images/flame-solid-transparent3.png" width="60" height="40" 
+            class="d-inline-block align-top" alt="navigation menu with Aish Chaim logo"><span style="color: white";>AISH CHAIM</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Programs
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" id="ongoing-programs" href="ongoing-programs.html">Ongoing Programs</a>
+                        <a class="dropdown-item" id="upcoming-programs" href="upcoming-programs.html">Upcoming Programs</a>
+                        <a class="dropdown-item" id="past-programs" href="past-programs.html">Past Programs</a>
+                      </div>
+                    </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#"><button>DONATE</button></a>
+              </li>
+              
+            </ul>
+          </div><!--apart of .collapse-->
+        </nav>           
+               
+      </div> <!--closing div container for flex-box and .nav-container-->
+
+</header>
+
+
+<div class="container-parsha-and-gallery">
+  <div class="wrapper-parsha-and-special-links">
+    <div class="wrapper-parsha">
+      <div id="parsha">
+            <h5><span style="display:inline-block";>July 28, 2019</span>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span style="display:inline-block";><h5>Parshat of the Week: Pinchas</h5></span>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <span style="display:inline-block";>Candlelighting: 8:02pm</span> 
+            &nbsp&nbsp&nbsp&nbsp
+            <span style="display:inline-block";>Shabbat Ends: 9:06pm</span>
+            &nbsp&nbsp&nbsp</h5>
+      </div> <!--closing div to #parsha-->
+    </div> <!--closing div to .wrapper-parsha-->
+  </div> <!--closing div to .wrapper-and-special-links-->
+</div>
+
+
+<div class="header-image">
+  <!--<img id="img-shabbat-dinner-gallery" src="images/shabbat-dinner-cropped.png" alt=""-->
+  <img id="img-header-parsha-gems" src="images/parsha-gems-symbol2.png" alt="">
+</div>
+
+<!--3-images-->
+<div class="row main-image-desktop">
+  <div class="col-sm-3">
+    <img id="img-shabbat-dinner-desktop" src="images/shabbat-dinner-cropped.png" alt="">
+  </div>
+
+  <div class="col-sm-3">
+    <img id="img-israel-desktop" src="images/israel-trip-experiment2.png" alt="">
+  </div>
+
+  <div class="col-sm-3">
+    <img id="img-sukkot-desktop" src="images/sukkot-experiment2.png" alt="">
+  </div>
+</div>  
+
+<main>
+  
+  <!-- Begin Constant Contact Inline Form Code -->
+<div class="ctct-inline-form" data-form-id="9c62cc98-13ff-41cd-8d1f-a15f219e0188"></div>
+<!-- End Constant Contact Inline Form Code -->
+
+<div class="contact-form-box-container">
+  <div id="rabbi-contact">
+    <p><h2 style="text-shadow: 1.5px 1.5px rgb(189, 188, 188)";>Connect today!</h2></p>
+    <p>Rabbi Binyomin Davis <br> <a href="913-481-5842">913-481-5842</a></p>
+</div>
+
+  
+
+  <!--<div class="form-box">
+    <form action="/my-handling-form-page" method="post">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+      </div>
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail">
+      </div>
+      <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </div>
+      <div class="button">
+        <button id="submit-button" type="submit">Send your message</button>
+      </div>
+    </form>
+  </div> <!-close div to .form-box-->
+</div><!--close div to .contact-form-box-container-->
+
+
+
+<div class="paypal">
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="W2UELXJQJE4GG" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+    </form>
+</div>
+
+</main> <!--closing div to .main-->
+
+<footer>Aish Chaim &copy; 2019</footer>
+
+ 
+    
+<!-- CDN Script for JQuery -->
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+          
+    <!-- CDN Script for Popper JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <!-- CDN Script for bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+     <!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "5087fb0a3e71f04cf439063f0a473c39"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms --> 
+   
+  </body>
+</html>
