@@ -1,0 +1,59 @@
+body {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+  padding: 0;
+}
+
+button {
+  border-radius: 25px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: orange;
+}
+
+.welcome-header {
+  display: none;
+}
+
+.container-img {
+  display: none;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+.navbar-mobile {
+  display: inline-flex;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    padding: 0px;
+} 
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.bg-light {
+    background-color: black !important;
+}
+
+.fa-bars  {
+    color: white !important;
+}
+
+.nav-item a{
+    color: white !important;
+}
+
+.ctct-inline-form {
+    display: inline-block !important;
+}
