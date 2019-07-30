@@ -46,30 +46,30 @@
       rel="stylesheet"/>
         
     <script>
-      $(document).ready(function() {
-        $("#myCarousel").on("slide.bs.carousel", function(e) {
-          var $e = $(e.relatedTarget);
-          var idx = $e.index();
-          var itemsPerSlide = 3;
-          var totalItems = $(".carousel-item").length;
+      //$(document).ready(function() {
+        //$("#myCarousel").on("slide.bs.carousel", function(e) {
+          //var $e = $(e.relatedTarget);
+          //var idx = $e.index();
+          //var itemsPerSlide = 3;
+          //var totalItems = $(".carousel-item").length;
       
-          if (idx >= totalItems - (itemsPerSlide - 1)) {
-            var it = itemsPerSlide - (totalItems - idx);
-            for (var i = 0; i < it; i++) {
+          //if (idx >= totalItems - (itemsPerSlide - 1)) {
+            //var it = itemsPerSlide - (totalItems - idx);
+            //for (var i = 0; i < it; i++) {
               // append slides to end
-              if (e.direction == "left") {
-                $(".carousel-item")
-                  .eq(i)
-                  .appendTo(".carousel-inner");
-              } else {
-                $(".carousel-item")
-                  .eq(0)
-                  .appendTo($(this).find(".carousel-inner"));
-              }
-            }
-          }
-        });
-      });
+              //if (e.direction == "left") {
+                //$(".carousel-item")
+                  //.eq(i)
+                  //.appendTo(".carousel-inner");
+              //} else {
+                //$(".carousel-item")
+                  //.eq(0)
+                  //.appendTo($(this).find(".carousel-inner"));
+              //}
+            //}
+          //}
+        //});
+      //});
 
       
     </script>
@@ -324,7 +324,8 @@
 
      <!-- Begin Constant Contact Active Forms -->
 <script> var _ctct_m = "5087fb0a3e71f04cf439063f0a473c39"; </script>
-<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<script id="signupScript" src="https://static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" 
+async defer></script>
 <!-- End Constant Contact Active Forms --> 
    
   </body>
