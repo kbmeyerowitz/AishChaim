@@ -5,14 +5,84 @@ body {
   padding: 0;
 }
 
+.wrapper-event-posters {
+  display: none;
+}
+
+.img-header {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.page-title {
+  max-width: 100%;
+  width: 100%;
+  margin-top: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  /*background-color: rgb(204, 203, 203);*/
+  background-color: orange;
+}
+
+@media (min-width: 320px)  {
+  .page-title {
+    margin-top: 0px;
+}
+
+.wrapper-event-posters {
+  background-color: black;
+}
+
+#community-events {
+  margin-top: 35px;
+  padding-right:10px;
+  padding-left: 10px;
+}
+
+
 .title {
     text-align: center;
 }
 
 .tagline {
     text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
+.tagline h3 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+
+}
+
+.wrapper-title-tagline {
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #99cc33; 
+  /*background-color: rgb(221, 220, 220)*/;
+}
+
+.events-category {
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 1.7px 1.7px rgb(156, 156, 156); 
+}
+
+hr {
+  width: 50%;
+  height: 10px;
+	border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  margin-top: 50px;
+}
 
 /*styling modal*/
 
@@ -22,7 +92,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
   
   .myImg:hover {opacity: 0.7;}
   
@@ -97,37 +170,6 @@ body {
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.wrapper-logo-carousel {
-  background-color: rgb(1, 14, 1);
-  /*background-color: rgb(26, 25, 25);*/
-}
-
-.mobile-logo {
-    text-align: center;
-}
-
-#logo-tagline {
-    margin-top: 75px;
-    max-width: 100%;
-    width: 45%;
-}
-
-#largescreen-main-image {
-  display: none;
-}
-
 .parsha-flex {
     display: none;
     margin-top: 50px;
@@ -143,8 +185,59 @@ body {
 
 /*styling navbar*/
 
+#our-mission-color {
+  color: black !important;
+}
+
+#prayer-times-color {
+    color: black !important;
+}
+
+#whats-new-color {
+  color: black !important;
+}
+
+#our-story-color {
+  color: black !important;
+}
+
+#meet-the-team-color {
+  color: black !important;
+}
+
+#ongoing-programs {
+  color: black !important;
+}
+
+#upcoming-programs {
+  color: black !important;
+}
+
+#past-programs {
+  color: black !important;
+}
+
+/*makes the navbar black with white hamburger bars*/
+.navbar-toggler-icon {
+  color: white !important;
+}
+
 .navbar {
-  background-color: #e0efc0 !important;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+} 
+
+.bg-light {
+  background-color: black !important;
+}
+
+.fa-bars  {
+  color: white !important;
+}
+
+.nav-item a{
+  color: white !important;
 }
 
 .navbar-desktop {
@@ -169,174 +262,17 @@ body {
     padding: 0px;
 } 
 
-/*.navbar {
-    display: flex;
-    max-width: 100%;
-    width: 100%;
-}commented out because it was preventing my .desktop-mobile: display: none from working*/ 
-
-#ongoing-programs {
-  color: black !important;
-}
-
-#upcoming-programs {
-  color: black !important;
-}
-
-#past-programs {
-  color: black !important;
-}
-
 /*styling main body*/
-#israel {
-    margin-top: 25px;
-    max-width: 100%;
-    width: 100%;
-}
 
-.welcome-message-container {
-    text-align: center;
-    background-color: rgb(230, 228, 228);
-}
-
-.first-separator {
-  width: 50%;
-  border: 1px solid black;
-  margin-top: 50px;
-}
-
-.welcome {
-  display: inline-block;
-  max-width: 100%;
-  width: 90%;
-  margin-top: 25px;
-  padding: 10px;
-  background: #99cc33 /* rgba(119, 5, 5, 0.7);
-  color: black /* white*/;
-  border-radius: 25px;
-}
-
-.welcome h5 {
-  line-height: 1.7rem;
-}
-
-
-.welcome-message {
-    display: inline-block;
-    max-width: 100%;
-    width: 90%;
-    margin-top: 25px;
-    padding: 10px;
-    /*background: #3399ff /* rgba(119, 5, 5, 0.7);*/
-    color: black /* white*/;
-}
-
-.welcome-message h5 {
-    line-height: 1.7rem;
-}
-
-h5 {
-    letter-spacing: -1px;
-}
-
-/*juber poster*/
-
-.main-events-image {
-  margin-top: 25px;
-}
-
-#mobile-main-image  {
-  margin-top: 20px;
-  max-width: 100%;
-  width: 100%;
-}
-
-#main {
-    background-color: tan;
-}
-
-#side-bar {
-    background-color: pink;
-}
-
-/*styling carousel*/
-/*controls image height*/.img-fluid {
-    height: 210px;
-}
-
-#main {
-    margin-top: 25px;
-}
 
 @font-face {
   font-family: piron;
   src: url(fonts/piron.otf);
 }
 
-#learn {
-  font-family: piron;
-  border-radius: 25px;
-}  
-  
-
-#experience {
-  font-family: piron;
-  border-radius: 25px;
-}
-
-#grow {
-  font-family: piron;
-  border-radius: 25px;
-}
-
-.card-body {
-     
-}
-
-#myCarousel {
-    margin-top: 25px;
-}
-
 .text-center {
     padding-top: 15px;
 }
-
-
-.mission-statement {
-    background-color: rgb(230, 228, 228);
-    max-width: 100%;
-    width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 15px;
-    margin-top: 55px;
-    text-align: center;
-}
-
-#mission-statement-id {
-max-width: 100%;
-width: 91%;
-text-shadow: 1.5px 1.5px grey; 
-box-shadow: 5px 10px #888888;
-background-color: #ff9933;
-padding-left: 4px;
-}
-
-.juber-statement {
-  text-align: center;
-  margin-top: 55px;
-}
-
-#juber-statement-id {
-  max-width: 100%;
-  width: 70%;
-  font-size: 1.5rem;
-  text-shadow: 1.5px 1.5px grey; 
-  box-shadow: 5px 10px #888888;
-  background-color: #ff9933;
-  padding-left: 4px;
-  margin: 0 auto;
-  }
 
 .paypal {
   margin-top: 50px;
@@ -350,14 +286,6 @@ padding-left: 4px;
   padding-bottom: 30px;
 }
 
-#rabbi-contact {
-text-align: center;
-}
-
-#rabbi-name {
-text-shadow: 1.5px 1.5px rgb(189, 188, 188);  
-}
-
 .form-box {
   margin-top: 25px;
 }
@@ -368,35 +296,20 @@ text-shadow: 1.5px 1.5px rgb(189, 188, 188);
 
 @media (min-width: 320px) {
 
-#mission-statement-id {
-max-width: 100%;
-width: 100%;
-}
-}
 
-#torah-scroll {
-    display: inline-block;
-    max-width: 100%;
-    width: 15%;
-}
 
 .form-box {
     text-align: center;
 }
-
+}
 /*end styling main body*/
 
 
 @media (min-width: 1200px)  {
 
-#myCarousel {
-  display: none;
-}
-
-#mobile-main-image {
-  max-width: 100%;
-  width: 30%;
-}
+.tagline {
+  padding: 0px, 30px;
+}  
 
 #flame-mobile {
   display: none;
@@ -412,14 +325,10 @@ width: 100%;
   display: none;
 }
 
-.navbar {
-  float: right !important;
-  width: 70% !important;
-  background-color: white !important;
-}
-
 .navbar-nav {
   display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .nav-item {
@@ -427,48 +336,13 @@ width: 100%;
 }
 
 .nav-item a{
-  color: black !important;
+  color: white;
   font-size: 1.5rem;
   /*padding-right: 75px !important;*/
   }
 
 .nav-container {
     margin-top: 25px;
-}
-
-/*.nav-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  width: 100%;
-  padding: 0px;
-} 
-
-.navbar-toggler-icon {
-  color: white !important;
-}
-
-.navbar {
-  display: flex;
-  max-width: 100%;
-  width: 100%;
-}*/
-
-/* from deleted div in HTML .mobile-logo2 {
-  display: inline-block;
-  max-width: 100%;
-  width: 50%;
-  float: left;
-}*/
-
-.mobile-logo {
-  
-}
-#logo-tagline {
-  margin-top: 25px;
-  max-width: 100%;
-  width: 15%;
-  box-shadow: 5px 10px #888888;
 }
 
 .wrapper-parsha-and-special-links {
@@ -491,31 +365,28 @@ width: 100%;
 
 #visit-aish {
   /*box-shadow: 5px 10px #2e198a;*/
-  
-  
 }
 /* Container holding the image and the text */
 
-#largescreen-main-image {
+.events-category {
   display: block;
+  margin: 0 auto;
   max-width: 100%;
   width: 100%;
 }
 
-.centered {
-    position: absolute;
-    top: -300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-#main {
-    background-color: tan;
+.col-sm-3 {
+  display: inline;
+  margin: 0 auto;
+  padding-right: 65px;
 }
 
-#side-bar {
-    background-color: pink;
+.myImg {
+display: inline-block;
 }
+
+
+
 
 /*start styling forms*/
 form {
@@ -581,6 +452,26 @@ form {
 
 
 @media (min-width: 768px) {
+
+main {
+  margin-top: 75px;
+}
+
+.wrapper-event-posters {
+  display: block;
+}
+
+.col-sm-3 {
+  display: inline;
+  margin: 0 auto;
+  padding-right: 65px;
+}
+
+.close {
+  position: relative;
+  top: 0px;
+}
+
     /* show 3 items */
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
